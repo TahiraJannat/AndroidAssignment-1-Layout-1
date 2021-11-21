@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Assignment-1</string>
-    <string name="app_name1">Already Have Account? <a href="www.google.com">Log In</a></string>
+    <string name="app_name1">Hello <a href="www.google.com">Google</a></string>
 
 </resources>

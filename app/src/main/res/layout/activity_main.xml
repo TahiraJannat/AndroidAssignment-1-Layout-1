@@ -15,37 +15,27 @@
         android:orientation="vertical"
         android:weightSum="2">
 
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            app:icon="@drawable/left_arrow"
-            app:iconPadding="-20px"
-            app:iconSize="60px"
-            app:iconTint="#000000" />
-
         <TextView
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/discovery"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00000000"
+            android:layout_height="match_parent"
+            android:background="@color/white"
             android:focusable="auto"
             android:fontFamily="serif"
-            android:gravity="start"
-            android:inputType="textPersonName"
-            android:paddingLeft="40px"
-            android:text="Sign Up"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Discovery"
             android:textColor="#000000"
-            android:textSize="32sp"
+            android:textSize="34sp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="190px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="270px"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
@@ -53,186 +43,314 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
+            android:background="@color/white"
             android:gravity="center"
-            android:paddingLeft="20dp"
-            android:paddingTop="40dp">
+            android:padding="10dp">
 
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="match_parent"
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="159dp"
+                android:layout_height="76dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_marginBottom="0dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                app:srcCompat="@drawable/images" />
+
+            <TextView
+                android:id="@+id/bars"
+                android:layout_width="156dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
-                android:backgroundTint="#3a5999"
-                android:backgroundTintMode="add"
-                android:paddingLeft="70px"
-                android:paddingTop="35px"
-                android:paddingRight="50px"
-                android:paddingBottom="35px"
-                android:text="Facebook"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="48px"
-                app:cornerRadius="100px"
-                app:icon="@drawable/facebook"
-                app:iconPadding="-20px"
-                app:iconSize="80px"
-                app:iconTint="#FFFFFF" />
+                android:layout_marginTop="90dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Bars & Hotels"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place1"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="42 Place"
+                android:textColor="#717171"
+                android:textSize="14sp"
+                android:textStyle="normal" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
+            android:background="@color/white"
             android:gravity="center"
-            android:paddingLeft="20dp"
-            android:paddingTop="40dp"
-            android:paddingRight="20dp">
+            android:padding="10dp">
 
 
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="match_parent"
+            <ImageView
+                android:id="@+id/dining"
+                android:layout_width="158dp"
+                android:layout_height="82dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_marginBottom="0dp"
+                app:srcCompat="@drawable/download" />
+
+            <TextView
+                android:id="@+id/dining"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#01abee"
-                android:backgroundTintMode="add"
-                android:paddingLeft="70px"
-                android:paddingTop="35px"
-                android:paddingRight="50px"
-                android:paddingBottom="35px"
-                android:text="Twitter"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="48px"
-                app:cornerRadius="100px"
-                app:icon="@drawable/twitter"
-                app:iconPadding="-5px"
-                app:iconSize="75px"
-                app:iconTint="#FFFFFF" />
+                android:layout_marginTop="90dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Fine Dining"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place2"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="15 Places"
+                android:textColor="#717171"
+                android:textSize="14sp"
+                android:textStyle="normal" />
         </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="480px"
-        android:hapticFeedbackEnabled="true"
-        android:orientation="vertical"
-        android:weightSum="1">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="805px"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
 
-        <TextView
-            android:id="@+id/editTextTextPersonName"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:fontFamily="serif"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
             android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="or sign up with gmail"
-            android:textColor="#3C3C3C"
-            android:textSize="42px"
-            android:layout_marginTop="8dp"/>
+            android:padding="10dp">
 
+
+            <ImageView
+                android:id="@+id/images3"
+                android:layout_width="159dp"
+                android:layout_height="76dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_marginBottom="0dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                app:srcCompat="@drawable/vector_illustration_building_restaurant_cafe_flat_icon_79178541" />
+
+            <TextView
+                android:id="@+id/cafe"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Cafes"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place3"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="28 Place"
+                android:textColor="#717171"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="158dp"
+                android:layout_height="82dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_marginBottom="0dp"
+                app:srcCompat="@drawable/route" />
+
+            <TextView
+                android:id="@+id/nearby"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Nearby"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place4"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="34 Places"
+                android:textColor="#717171"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1.3in"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1350px"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-        android:orientation="vertical"
-        android:padding="16dp"
-        tools:context=".MainActivity">
 
-        <EditText
-            android:id="@+id/firstName"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/et_style"
-            android:hint="First Name"
-            android:padding="15dp"
-            android:textColor="#757575"
-            android:textColorHint="#9A9A9A" />
-
-        <EditText
-            android:id="@+id/lastName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/et_style"
-            android:hint="Last Name"
-            android:inputType="text"
-            android:padding="15dp"
-            android:textColor="#757575"
-            android:textColorHint="#9A9A9A" />
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/et_style"
-            android:hint="Your Email"
-            android:padding="15dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#757575"
-            android:textColorHint="#9A9A9A" />
-        <Button
-            android:id="@+id/submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#53d2c1"
-            android:backgroundTintMode="add"
-            android:layout_marginTop="20dp"
-            android:paddingLeft="70px"
-            android:paddingTop="35px"
-            android:paddingRight="50px"
-            android:paddingBottom="35px"
-            android:text="Sign Up"
-            android:textAllCaps="false"
-            android:textSize="48px"
-            app:cornerRadius="100px"
-            />
-
-        <TextView
-            android:id="@+id/terms"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:fontFamily="serif"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
             android:gravity="center"
-            android:layout_marginTop="30dp"
-            android:padding="10px"
-            android:text="By signing up, You agreed with our terms of service and privacy policy"
-            android:ellipsize="none"
-            android:scrollHorizontally="false"
-            android:textColor="#3C3C3C"
-            android:textSize="42px"
-            android:lineHeight="28dp"/>
-        <TextView
-            android:id="@+id/account"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="159dp"
+                android:layout_height="76dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_marginBottom="0dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                app:srcCompat="@drawable/fastfoods" />
+
+            <TextView
+                android:id="@+id/fast"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Fast Foods"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place5"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="29 Place"
+                android:textColor="#717171"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:fontFamily="serif"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
             android:gravity="center"
-            android:layout_marginTop="30dp"
-            android:padding="50px"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="@string/app_name1"
-            android:autoLink="all"
-            android:clickable="true"
-            android:linksClickable="true"
-            android:ellipsize="none"
-            android:scrollHorizontally="false"
-            android:textColor="#3C3C3C"
-            android:textSize="42px"
-            android:lineHeight="28dp"/>
+            android:padding="10dp">
 
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="158dp"
+                android:layout_height="82dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_marginBottom="0dp"
+                app:srcCompat="@drawable/pizza" />
+
+            <TextView
+                android:id="@+id/featured"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Featured Foods"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place6"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="21 Places"
+                android:textColor="#717171"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
     </LinearLayout>
+
+
+
 
 </RelativeLayout>
