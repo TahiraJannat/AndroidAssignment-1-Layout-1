@@ -7,197 +7,243 @@
 
     android:background="#f6f6f6">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="175dp"
-        android:background="#00000000"
-        android:hapticFeedbackEnabled="true"
-        android:orientation="vertical"
-        android:weightSum="2"
-        android:maxLines="2"
-        android:gravity="bottom">
-
-
-        <TextView
-            android:id="@+id/mainTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:background="#00000000"
-            android:focusable="auto"
-            android:fontFamily="serif"
-            android:gravity="bottom"
-            android:paddingLeft="40px"
-            android:text="Log Into"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/mainTitle2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:background="#00000000"
-            android:focusable="auto"
-            android:fontFamily="serif"
-            android:gravity="bottom"
-            android:paddingLeft="40px"
-            android:text="Your Account"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            android:textStyle="bold"/>
-    </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1.1in"
-        android:weightSum="2"
-        android:orientation="vertical"
-        tools:context=".MainActivity"
-        android:background="@color/white"
-        android:layout_marginLeft="50px"
-        android:layout_marginRight="50px"
-        android:paddingBottom="20dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
 
         <FrameLayout
-            android:layout_width="match_parent"
+            android:layout_width="214dp"
             android:layout_height="wrap_content"
-            android:layout_margin="0dp"
-            >
-
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:hint="*********123"
-                android:inputType="textWebEmailAddress|text"
-                android:paddingLeft="20dp"
-                android:paddingTop="20dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="40dp"
-                android:textColor="#757575"
-                android:textColorHint="#000"
-                android:textSize="18sp">
-
-                <requestFocus />
-            </EditText>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:padding="20dp"
-                android:text="Email"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="20dp"
-                android:text="Wrong Emalil"
-                android:textColor="#F44336"
-                android:textSize="16sp" />
-        </FrameLayout>
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="0dp"
+            android:layout_marginTop="45dp"
             android:layout_weight="1"
-            >
+            android:gravity="start">
 
-            <EditText
-                android:id="@+id/editText1"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:hint="*********123"
-                android:inputType="numberPassword"
-                android:padding="10dp"
-                android:textColor="#757575"
-                android:textColorHint="#000">
-
-                <requestFocus />
-            </EditText>
+            <ImageView
+                android:id="@+id/time"
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_gravity="start"
+                android:layout_margin="8dp"
+                android:foreground="@drawable/sun"
+                android:foregroundTint="#6e6ad9"
+                android:scaleType="fitStart" />
 
             <TextView
-                android:id="@+id/forgotPass"
-                android:layout_width="match_parent"
+                android:id="@+id/title1"
+                android:layout_width="227dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_weight="1"
-                android:gravity="end"
-                android:hint="Forgot?"
-                android:inputType="numberPassword"
-                android:padding="10dp"
-                android:textColor="#757575"
-                android:textColorHint="#808080"
-                android:textSize="16sp"
+                android:gravity="center"
+                android:hint="TUES 30 OCT"
+                android:paddingTop="10dp"
+                android:textColor="#6e6ad9"
+                android:textColorHint="#6e6ad9"
+                android:textSize="20sp"
                 android:textStyle="bold">
 
                 <requestFocus />
             </TextView>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/hi"
+                android:layout_width="213dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:padding="10dp"
-                android:text="Password"
-                android:textSize="16sp" />
+                android:gravity="center"
+                android:hint="Hi, Grace"
+                android:paddingTop="40dp"
+                android:textColorHint="#2d3341"
+                android:textSize="45sp"
+                android:textStyle="bold">
+
+                <requestFocus />
+            </TextView>
+
         </FrameLayout>
 
 
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="93dp"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/istockphoto_1278976856_170667a"
+                        app:cardCornerRadius="20dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1.8in"
+        android:layout_marginRight="10dp"
+        android:background="#f5f6fa"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:cardCornerRadius="50dp">
+
+        <FrameLayout
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start">
+
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:hint="Metrics"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="#202335"
+                android:textSize="32sp"
+                android:textStyle="bold">
+
+                <requestFocus />
+            </TextView>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:foreground="@drawable/menu"
+                    android:foregroundTint="#9C9C9C"
+                    android:gravity="center"
+                    android:scaleType="centerCrop"
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2.33in"
-        android:orientation="vertical"
-        android:padding="16dp"
-        tools:context=".MainActivity">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0.96in"
+        android:layout_marginRight="10dp"
+        android:background="#f5f6fa"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:cardCornerRadius="50dp">
 
-        <Button
-            android:id="@+id/submit"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:backgroundTint="#242329"
-            android:backgroundTintMode="add"
-            android:paddingLeft="70px"
-            android:paddingTop="35px"
-            android:paddingRight="50px"
-            android:paddingBottom="35px"
-            android:text="Log In"
-            android:textAllCaps="false"
-            android:textSize="48px"
-            app:cornerRadius="100px" />
 
-        <TextView
-            android:id="@+id/title1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#00000000"
-            android:focusable="auto"
-            android:fontFamily="serif"
-            android:gravity="center"
-            android:padding="40px"
-            android:text="Or Sign up with social account"
-            android:textColor="#4C4C4C"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:cardCornerRadius="20dp"
+                    app:srcCompat="@drawable/_865820" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start">
+
+
+            <TextView
+                android:id="@+id/Title3"
+                android:layout_width="227dp"
+                android:layout_height="wrap_content"
+                android:hint="Health Score"
+                android:textColorHint="#202335"
+                android:textSize="24sp"
+                android:textStyle="bold">
+
+            <requestFocus />
+
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:hint="Based on your overall health test your score is 84 and consider good..."
+                android:paddingTop="40dp"
+                android:textColorHint="#8882f0"
+                android:textSize="18sp"
+                android:textStyle="">
+
+                <requestFocus />
+            </TextView>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginTop="105dp"
+                android:background="#0000000"
+                android:gravity="start"
+                android:text="Read More.."
+                android:textAllCaps="false"
+                android:textColor="#8882f0"
+                android:textSize="42px"
+                android:textStyle="bold" />
+        </FrameLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2.9in"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2.05in"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
@@ -205,61 +251,257 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
+            android:background="#8882f0"
             android:gravity="center"
-            android:paddingLeft="20dp"
-            android:paddingTop="40dp">
+            android:padding="10dp"
+            app:cardCornerRadius="20dp">
 
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="156dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
-                android:backgroundTint="#010101"
-                android:backgroundTintMode="add"
+                android:focusable="auto"
+                android:fontFamily="serif"
                 android:gravity="center"
-                android:paddingLeft="200px"
-                android:paddingTop="35px"
-                android:paddingRight="50px"
-                android:paddingBottom="35px"
-                app:cornerRadius="100px"
-                app:icon="@drawable/facebook"
-                app:iconSize="85px"
-                app:iconTint="#FFFFFF" />
+                android:text="CALORIES"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="156dp"
+                android:layout_height="67dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                app:srcCompat="@drawable/qxjoo" />
+
+            <TextView
+                android:id="@+id/title6"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="500 Cal"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title7"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="Last update 3km"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
+            android:background="#a991f8"
             android:gravity="center"
-            android:paddingLeft="20dp"
-            android:paddingTop="40dp"
-            android:paddingRight="20dp">
+            android:padding="10dp">
 
 
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/title8"
+                android:layout_width="156dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#01abee"
-                android:backgroundTintMode="add"
-                android:paddingLeft="200px"
-                android:paddingTop="35px"
-                android:paddingRight="50px"
-                android:paddingBottom="35px"
-                app:cornerRadius="100px"
-                app:icon="@drawable/twitter"
-                app:iconPadding="-5px"
-                app:iconSize="80px"
-                app:iconTint="#FFFFFF" />
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="WEIGHT"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                app:srcCompat="@drawable/weight" />
+
+            <TextView
+                android:id="@+id/title9"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="58 kg"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title10"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="Last update 3d"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal" />
         </RelativeLayout>
     </LinearLayout>
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3.15in"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#488ff7"
+            android:gravity="center"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/title11"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="WATER"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="164dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                app:srcCompat="@drawable/glass_of_water" />
+
+            <TextView
+                android:id="@+id/title12"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="750 ml"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title13"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="Last update 3d"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#4f5b7e"
+            android:gravity="center"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/title14"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="STEPS"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/images4"
+                android:layout_width="157dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                app:srcCompat="@drawable/pvhnj" />
+
+            <TextView
+                android:id="@+id/title15"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="9,890"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title16"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:focusable="auto"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="Last update 3m"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
 
 </RelativeLayout>
