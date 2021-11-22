@@ -9,348 +9,225 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="175dp"
         android:background="#00000000"
         android:hapticFeedbackEnabled="true"
         android:orientation="vertical"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:maxLines="2"
+        android:gravity="bottom">
 
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#00FFFFFF"
-            android:text="Check Out"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textSize="21sp"
-            android:textStyle="normal"
-            app:icon="@drawable/left_arrow__1_"
-            app:iconPadding="-20px"
-            app:iconSize="60px"
-            app:iconTint="#000000" />
 
         <TextView
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/mainTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:background="#00000000"
             android:focusable="auto"
             android:fontFamily="serif"
-            android:gravity="start"
+            android:gravity="bottom"
             android:paddingLeft="40px"
-            android:text="Delivery Address"
+            android:text="Log Into"
             android:textColor="#000000"
-            android:textSize="18sp"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="101dp"
-        android:layout_marginTop="190px"
-        android:background="@color/white"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-
-        <RelativeLayout
-            android:layout_width="500dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-
-
-            <TextView
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="match_parent"
-                android:layout_height="57dp"
-                android:background="#00000000"
-                android:focusable="auto"
-                android:fontFamily="serif"
-                android:gravity="start"
-                android:paddingLeft="40px"
-                android:text="123 York 123Brooklyn, NY, 11201, USA"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-        </RelativeLayout>
-
-        <RelativeLayout
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/mainTitle2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-
-            android:paddingRight="20dp">
-
-
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="#00FFFFFF"
-                android:text="Change"
-                android:textAllCaps="false"
-                android:textColor="#F44336"
-                android:textSize="48px" />
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="180dp"
-        android:background="@color/white"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-
-        <RelativeLayout
-            android:layout_width="500dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-
-
-            <TextView
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="match_parent"
-                android:layout_height="57dp"
-                android:background="#00000000"
-                android:focusable="auto"
-                android:fontFamily="serif"
-                android:gravity="start"
-                android:paddingLeft="40px"
-                android:text="Payment Method"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-
-            android:paddingRight="20dp">
-
-
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="#00FFFFFF"
-                android:text=" Add +"
-                android:textAllCaps="false"
-                android:textColor="#F44336"
-                android:textSize="48px" />
-        </RelativeLayout>
-
+            android:layout_gravity="center_vertical"
+            android:background="#00000000"
+            android:focusable="auto"
+            android:fontFamily="serif"
+            android:gravity="bottom"
+            android:paddingLeft="40px"
+            android:text="Your Account"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1.3in"
+        android:layout_marginTop="1.1in"
+        android:weightSum="2"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="@color/white"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:paddingBottom="20dp">
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            >
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:hint="*********123"
+                android:inputType="textWebEmailAddress|text"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="40dp"
+                android:textColor="#757575"
+                android:textColorHint="#000"
+                android:textSize="18sp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="20dp"
+                android:text="Email"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="20dp"
+                android:text="Wrong Emalil"
+                android:textColor="#F44336"
+                android:textSize="16sp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            >
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="*********123"
+                android:inputType="numberPassword"
+                android:padding="10dp"
+                android:textColor="#757575"
+                android:textColorHint="#000">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/forgotPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:hint="Forgot?"
+                android:inputType="numberPassword"
+                android:padding="10dp"
+                android:textColor="#757575"
+                android:textColorHint="#808080"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+                <requestFocus />
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="10dp"
+                android:text="Password"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.33in"
         android:orientation="vertical"
         android:padding="16dp"
         tools:context=".MainActivity">
 
-
-
-        <EditText
-            android:id="@+id/lastName"
+        <Button
+            android:id="@+id/submit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/et_style"
-            android:hint="*********123"
-            android:inputType="text"
-            android:padding="15dp"
-            android:textColor="#757575"
-            android:textColorHint="#000" />
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/et_style"
-            android:hint="Jacky@gmail.com"
-            android:padding="15dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#000"
-            android:textColorHint="#000" />
-
+            android:layout_height="60dp"
+            android:backgroundTint="#242329"
+            android:backgroundTintMode="add"
+            android:paddingLeft="70px"
+            android:paddingTop="35px"
+            android:paddingRight="50px"
+            android:paddingBottom="35px"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textSize="48px"
+            app:cornerRadius="100px" />
 
         <TextView
-            android:id="@+id/terms"
+            android:id="@+id/title1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="#00000000"
+            android:focusable="auto"
             android:fontFamily="serif"
             android:gravity="center"
-            android:layout_marginTop="30dp"
-            android:padding="10px"
-            android:text="By signing up, You agreed with our terms of service and privacy policy"
-            android:ellipsize="none"
-            android:scrollHorizontally="false"
-            android:textColor="#3C3C3C"
-            android:textSize="42px"
-            android:lineHeight="28dp"/>
-
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="380dp"
-        android:background="@color/white"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-
-        <RelativeLayout
-            android:layout_width="500dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-
-
-            <TextView
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="match_parent"
-                android:layout_height="57dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#00000000"
-                android:focusable="auto"
-                android:fontFamily="serif"
-                android:gravity="start"
-                android:layout_margin="20dp"
-                android:paddingLeft="40px"
-                android:text="Enter Coupon"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-
-            android:paddingRight="20dp">
-
-
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/et_style"
-                android:hint="HUNGRY10"
-                android:layout_margin="20dp"
-                android:textColor="#000"
-                android:textColorHint="#000" />
-        </RelativeLayout>
+            android:padding="40px"
+            android:text="Or Sign up with social account"
+            android:textColor="#4C4C4C"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="435dp"
-        android:background="@color/white"
+        android:layout_marginTop="2.9in"
         android:orientation="horizontal"
         android:weightSum="2">
 
 
         <RelativeLayout
-            android:layout_width="500dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center">
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="40dp">
 
-            <TextView
-                android:id="@+id/editTextTextPersonName3"
+
+            <Button
+                android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="10dp"
-                android:background="#00000000"
-                android:focusable="auto"
-                android:fontFamily="serif"
-                android:gravity="start"
-                android:paddingLeft="40px"
-                android:text="Summery"
-                android:textColor="#000000"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:layout_marginTop="55dp"
-                android:background="#00000000"
-                android:focusable="auto"
-                android:fontFamily="serif"
-                android:gravity="start"
-                android:paddingLeft="40px"
-                android:text="Summery"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="85dp"
-                android:background="#00000000"
-                android:focusable="auto"
-                android:fontFamily="serif"
-                android:gravity="start"
-                android:paddingLeft="40px"
-                android:text="Sub Total"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="115dp"
-                android:background="#00000000"
-                android:focusable="auto"
-                android:fontFamily="serif"
-                android:gravity="start"
-                android:paddingLeft="40px"
-                android:text="Discount"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="155dp"
-                android:background="#00000000"
-                android:focusable="auto"
-                android:fontFamily="serif"
-                android:gravity="start"
-                android:paddingLeft="40px"
-                android:text="Total"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:backgroundTint="#010101"
+                android:backgroundTintMode="add"
+                android:gravity="center"
+                android:paddingLeft="200px"
+                android:paddingTop="35px"
+                android:paddingRight="50px"
+                android:paddingBottom="35px"
+                app:cornerRadius="100px"
+                app:icon="@drawable/facebook"
+                app:iconSize="85px"
+                app:iconTint="#FFFFFF" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -358,75 +235,31 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-
+            android:paddingLeft="20dp"
+            android:paddingTop="40dp"
             android:paddingRight="20dp">
 
 
-            <EditText
-                android:id="@+id/email"
+            <Button
+                android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="55dp"
-                android:background="@drawable/et_style"
-                android:gravity="end"
-                android:hint="$64.00"
-                android:textColor="#000"
-                android:textColorHint="#000" />
-
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="85dp"
-                android:background="@drawable/et_style"
-                android:gravity="end"
-                android:hint="free"
-                android:textColor="#000"
-                android:textColorHint="#000" />
-
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="115dp"
-                android:background="@drawable/et_style"
-                android:gravity="end"
-                android:hint="$-6.00"
-                android:textColor="#000"
-                android:textColorHint="#000" />
-
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="140dp"
-                android:background="@drawable/et_style"
-                android:gravity="end"
-                android:hint="$56.00"
-                android:textColor="#F44336"
-                android:textColorHint="#F44336"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+                android:backgroundTint="#01abee"
+                android:backgroundTintMode="add"
+                android:paddingLeft="200px"
+                android:paddingTop="35px"
+                android:paddingRight="50px"
+                android:paddingBottom="35px"
+                app:cornerRadius="100px"
+                app:icon="@drawable/twitter"
+                app:iconPadding="-5px"
+                app:iconSize="80px"
+                app:iconTint="#FFFFFF" />
         </RelativeLayout>
-
     </LinearLayout>
-
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="640dp"
-        android:backgroundTint="#F44336"
-        android:backgroundTintMode="add"
-        android:paddingLeft="70px"
-        android:paddingTop="35px"
-        android:paddingRight="50px"
-        android:paddingBottom="35px"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="Send Order"
-        android:textAllCaps="false"
-        android:textSize="48px"
-        app:cornerRadius="100px" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
 
 </RelativeLayout>
